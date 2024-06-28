@@ -27,13 +27,13 @@ DEBUG = True
 
 
 #Email Services
-EMAIL_HOST = 'smtp.google.com'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'sajid6207116@gmail.com'
 EMAIL_HOST_PASSWORD = 'sdia mxyw embf veij'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ALLOWED_HOSTS = []
 
