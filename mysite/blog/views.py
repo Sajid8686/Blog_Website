@@ -34,7 +34,7 @@ def post_share(request, post_id):
             subject = f"{cd['name']} recommends you to read" \
                 f"{post.title}"
             message = f"Read {post.title} at {post_url}\n\n " \
-                f"{cd['name']}\'s comments: {cd['comments']}"
+                f"{cd['name']}\'s comments: {cd['message']}"
             send_mail(subject, message, 'sajid6207116@gmail.com', [cd['to']])   
             sent = True 
     else:
